@@ -1,0 +1,21 @@
+<div class="toolbar" role="banner">
+  <img
+    width="100"
+    alt="OWP Logo"
+    src="assets/images/owp-logo-icon.png"
+  />
+  <span>Conway's Game of Life</span>
+    <div class="spacer"></div>
+</div>
+
+<body>
+  <div class="lines-break"></div>
+
+  <table class="center">
+    <tbody>
+      <tr *ngFor="row of rows">
+        <td class="chess-sq" *ngFor="col of columns"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
